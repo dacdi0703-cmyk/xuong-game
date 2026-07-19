@@ -181,7 +181,7 @@ function renderAuth() {
         <label class="field-label">Tên đăng nhập</label>
         <input class="field" name="username" required />
         <label class="field-label">Mật khẩu</label>
-        <input class="field" name="password" type="password" required minlength="6" />
+        <input class="field" name="password" type="password" required minlength="4" />
         <button class="btn-primary" type="submit">${state.authMode === "login" ? "Đăng nhập" : "Đăng ký"}</button>
       </form>
       <button class="btn-link" id="auth-switch">${state.authMode === "login" ? "Chưa có tài khoản? Đăng ký" : "Đã có tài khoản? Đăng nhập"}</button>
